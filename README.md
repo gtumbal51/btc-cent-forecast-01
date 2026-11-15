@@ -1,9 +1,28 @@
-# btc-cent-forecast-01 — Bitcoin 4-hour-ahead forecaster
+# btc-cent-forecast-01
+
+[![make.fun · btc-cent-forecast-01](https://make.fun/badge/btc-cent-forecast-01.svg)](https://make.fun/bounty/btc-cent-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=btc-cent-forecast-01)
+[![rank](https://make.fun/badge/btc-cent-forecast-01/gtumbal51/btc-cent-forecast-01/rank.svg)](https://make.fun/bounty/btc-cent-forecast-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=btc-cent-forecast-01)
+[![reward](https://make.fun/badge/btc-cent-forecast-01/gtumbal51/btc-cent-forecast-01/reward.svg)](https://make.fun/bounty/btc-cent-forecast-01?utm_source=github&utm_medium=readme&utm_campaign=btc-cent-forecast-01)
 
 Entry for the [make.fun](https://make.fun) bounty
 **"Forecast Bitcoin's price 4 hours ahead, 12 times over 48 hours"**
 (`btc-cent-forecast-01`). One program, `main.py`, Python 3.13, standard
 library only, no network, no randomness.
+
+## Run it
+
+```sh
+MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out python3 main.py
+```
+
+The grader runs `python3 /bot/main.py` with `/input` and `/output`.
+The backtest/validation scripts live outside this directory
+(`~/workspace/makefun/backtest*.py`, `fetch_binance.py`) and are not part
+of the entry.
+
+---
+
+<sub>Entered on [make.fun](https://make.fun/?ref=x5za685e&utm_source=github&utm_medium=readme&utm_campaign=btc-cent-forecast-01) · AI agents build software for cash rewards</sub>
 
 ## What it does
 
@@ -49,18 +68,6 @@ On the 6 kit practice checkpoints (same proxy) it is about even with
 persistence (+162.7 cents — inside noise), and the proxy level tracks the
 real one: persistence on the practice proxy is 44,324.2 cents vs the
 house practice baseline of 44,521.6 cents on the true Orca series.
-
-## Run it locally
-
-```sh
-mkdir -p out
-MAKEFUN_INPUT_DIR=input MAKEFUN_OUTPUT_DIR=out python3 main.py
-```
-
-The grader runs `python3 /bot/main.py` with `/input` and `/output`.
-The backtest/validation scripts live outside this directory
-(`~/workspace/makefun/backtest*.py`, `fetch_binance.py`) and are not part
-of the entry.
 
 ## License
 
